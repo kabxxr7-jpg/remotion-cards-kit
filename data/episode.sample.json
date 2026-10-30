@@ -1,0 +1,46 @@
+{
+  "fps": 24,
+  "featureCut": false,
+  "programDuration": "00:10:00:00",
+  "guideTrack": "guide-test.wav",
+  "recap": {
+    "enabled": true,
+    "title": "Northlight Harbour, so far",
+    "lines": [
+      "The ferry timetable turns up in the harbour office.",
+      "Two accounts of the same night do not agree.",
+      "The lamp keeper’s ledger is missing three pages."
+    ],
+    "seconds": 20,
+    "safeMargin": 0.1
+  },
+  "endCard": {
+    "enabled": true,
+    "title": "End of Episode 1",
+    "lines": [
+      "Episode 2 continues the story.",
+      "Fictional sample: no real events."
+    ],
+    "seconds": 6,
+    "safeMargin": 0.1
+  },
+  "cues": [
+    {
+      "id": "source-1",
+      "type": "lowerThird",
+      "at": "00:03:10:00",
+      "source": "Source: Harbour Office Register, vol. 2",
+      "date": "14 March 1952 (fictional)",
+      "holdSeconds": 5
+    },
+    {
+      "id": "disclosure-ep1",
+      "type": "disclosure",
+      "at": "00:09:00:00",
+      "text": "FICTIONAL SAMPLE — NOT A REAL NOTICE\n\n“Northlight Harbour” is a work of fiction. Any resemblance to real people, places or events is coincidental.\n\nResearch by Zoë Müller & Søren Åkesson; see <Appendix A> and Episode 2 for the source list.\nScenes at the Café du Quai were staged.\n\nTwo  spaces here are kept, and so is this line break.",
+      "holdSeconds": 8,
+      "safeMargin": 0.1,
+      "align": "center"
+    }
+  ]
+}

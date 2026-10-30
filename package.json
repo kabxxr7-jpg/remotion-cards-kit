@@ -1,0 +1,40 @@
+{
+  "name": "remotion-cards-kit",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Props-driven title cards for long-form video: a verbatim disclosure card, a removable recap card and end card, and a cue-sheet timeline, built with Remotion.",
+  "license": "MIT",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "mutation-check": "node scripts/mutation-check.mjs",
+    "guide": "node scripts/make-guide-wav.mjs data/episode.sample.json",
+    "render:disclosure": "remotion render src/index.ts DisclosureCard out/disclosure-1080p.mp4 --props=data/disclosure.sample.json",
+    "render:recap": "remotion render src/index.ts RecapCard out/recap-1080p.mp4 --props=data/recap.sample.json",
+    "render:episode": "npm run guide && remotion render src/index.ts EpisodeTimeline out/episode-window-1080p.mp4 --props=data/episode.sample.json --frames=13400-13700",
+    "render:episode:feature-cut": "npm run guide && remotion render src/index.ts EpisodeTimeline out/episode-window-feature-cut.mp4 --props=data/episode.feature-cut.json --frames=12920-13220",
+    "render:4k": "remotion render src/index.ts DisclosureCard out/disclosure-4k.mp4 --props=data/disclosure.sample.json --scale=2",
+    "still:disclosure": "remotion still src/index.ts DisclosureCard out/disclosure.png --props=data/disclosure.sample.json --frame=0",
+    "still:recap": "remotion still src/index.ts RecapCard out/recap.png --props=data/recap.sample.json --frame=240",
+    "verify:sync": "node scripts/verify-sync.mjs out/episode-window-1080p.mp4 13400 13440 192 && node scripts/verify-sync.mjs out/episode-window-feature-cut.mp4 12920 12960 192",
+    "stills": "npm run still:disclosure && npm run still:recap",
+    "verify:static": "node scripts/verify-static.mjs data/disclosure.sample.json",
+    "still:lowerthird": "remotion still src/index.ts EpisodeTimeline out/lowerthird.png --props=data/episode.sample.json --frame=5100"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.539",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "remotion": "4.0.539",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "jsdom": "^29.1.1",
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.12"
+  }
+}

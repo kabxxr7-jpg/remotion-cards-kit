@@ -1,0 +1,12 @@
+{
+  "enabled": true,
+  "title": "Northlight Harbour, so far",
+  "lines": [
+    "The ferry timetable turns up in the harbour office.",
+    "Two accounts of the same night do not agree.",
+    "The lamp keeper’s ledger is missing three pages."
+  ],
+  "seconds": 20,
+  "fps": 24,
+  "safeMargin": 0.1
+}

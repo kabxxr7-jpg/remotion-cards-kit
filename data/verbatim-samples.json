@@ -1,0 +1,42 @@
+[
+  {
+    "name": "curly-quotes",
+    "text": "“Quoted”, ‘single’ and an apostrophe: the lamp keeper’s ledger."
+  },
+  {
+    "name": "em-dash-and-nbsp",
+    "text": "Page 12 — Episode 2 – 12 500 units"
+  },
+  {
+    "name": "accents",
+    "text": "Zoë Müller, Søren Åkesson, Łódź, crème brûlée, Ñoño"
+  },
+  {
+    "name": "line-breaks",
+    "text": "Line one\nLine two\n\nLine four after a blank line"
+  },
+  {
+    "name": "html-significant",
+    "text": "5 < 6 & 7 > 4, \"double\" and 'single', &amp; &lt;b&gt; <b>not bold</b>"
+  },
+  {
+    "name": "leading-trailing-and-double-spaces",
+    "text": "  leading, trailing and  double  spaces  "
+  },
+  {
+    "name": "tab",
+    "text": "column one\tcolumn two"
+  },
+  {
+    "name": "symbols",
+    "text": "✓ … © ™ ½ → “smart”"
+  },
+  {
+    "name": "disclosure-sample",
+    "text": "FICTIONAL SAMPLE — NOT A REAL NOTICE\n\n“Northlight Harbour” is a work of fiction. Any resemblance to real people, places or events is coincidental.\n\nResearch by Zoë Müller & Søren Åkesson; see <Appendix A> and Episode 2 for the source list.\nScenes at the Café du Quai were staged.\n\nTwo  spaces here are kept, and so is this line break."
+  },
+  {
+    "name": "longest",
+    "text": "LONGEST SAMPLE (fictional). This card is the stress case for the legibility floor.\n\n“The committee met on the third Tuesday of the month” — that sentence is quoted exactly as supplied, including its dash, its quotation marks and its accented names: Zoë, Renée, Søren, Łukasz.\n\nParagraph three repeats the point at some length so that the fitting code has to choose a smaller size: the text must be shown whole, in the order given, and never shortened to make it fit.\n\nParagraph four: figures such as 12 500 and 3.5 % stay together because the spaces between them are non-breaking.\n\nParagraph five closes the card with a final line."
+  }
+]
